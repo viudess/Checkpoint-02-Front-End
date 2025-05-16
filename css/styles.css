@@ -1,19 +1,10 @@
 :root {
     --cor-principal: #14405d;
     --cor-white: #ffffff;
-    --cor-texto: #cfcfcf;
+    --cor-texto: #d7d7d7;
 
     --altura-coluna: 450px;
     --altura-img: 300px;
-    --largura-container: 90%;
-    --largura-botao: 130px;
-    --altura-botao: 40px;
-
-    --margem-centralizada: auto;
-    --margem-coluna: 0 40px 0 0;
-    --margem-botao: 20px 0 0 0;
-    --padding-informacao: 20px 0 0 0;
-    --padding-coluna: 10px;
 }
 
 * {
@@ -24,9 +15,9 @@
 }
 
 .container_principal {
-    width: var(--largura-container);
+    width: 90%;
     min-height: 100vh;
-    margin: var(--margem-centralizada);
+    margin: auto;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -37,58 +28,61 @@
 .coluna_esquerda {
     width: 65%;
     height: var(--altura-coluna);
-    margin: var(--margem-coluna);
+    margin: 0 40px 0 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
 
-.coluna_esquerda img {
-    width: 100%;
-    height: var(--altura-img);
-    object-fit: cover;
+    & img {
+        width: 100%;
+        height: var(--altura-img);
+    }
 }
 
 .informacao {
     height: calc(var(--altura-coluna) - var(--altura-img));
-    padding: var(--padding-informacao);
+    padding: 20px 0 0 0;
     display: flex;
     flex-direction: row;
-}
 
-.informacao h1 {
-    width: 80%;
+    & h1 {
+        width: 80%;
+    }
 }
 
 .descricao {
     display: flex;
     flex-direction: column;
-}
 
-.descricao a {
-    width: var(--largura-botao);
-    height: var(--altura-botao);
-    margin: var(--margem-botao);
-    background-color: var(--cor-principal);
-    color: var(--cor-white);
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    & a {
+        width: 130px;
+        height: 40px;
+        margin: 20px 0 0 0;
+        background-color: var(--cor-principal);
+        color: var(--cor-white);
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 .coluna_direita {
     width: 30%;
     height: var(--altura-coluna);
-    padding: var(--padding-coluna);
+    padding: 10px;
     background-color: var(--cor-principal);
     color: var(--cor-texto);
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-}
 
-.coluna_direita h1 {
-    color: var(--cor-white);
+    & h1 {
+        color: var(--cor-white);
+    }
+
+    & h2 {
+        padding: 0 0 5px 0;
+    }
 }
