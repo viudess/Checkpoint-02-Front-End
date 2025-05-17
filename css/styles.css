@@ -57,7 +57,6 @@ body{
 .descricao {
     display: flex;
     flex-direction: column;
-    border-radius: 10px;
 
     & p {
         font-size: 16px;
