@@ -40,11 +40,11 @@
         border-radius: 5px;
         box-shadow: 4px 4px 5px #303030;
         transition: 0.5s;
-    }
 
-    & img:hover{
-        box-shadow: 8px 8px 10px #303030;
-        border-radius: 10px;
+        &:hover {
+            box-shadow: 8px 8px 10px #303030;
+            border-radius: 10px;
+        }
     }
 }
 
@@ -80,13 +80,13 @@
         justify-content: center;
         align-items: center;
         transition: 0.5s;
-    }
 
-    & a:hover{
-        width: 150px;
-        font-size: 18px;
-        background-color: #287eb8;
-        box-shadow: 4px 4px 4px var(--cor-principal);
+        &:hover {
+            width: 150px;
+            font-size: 18px;
+            background-color: #287eb8;
+            box-shadow: 4px 4px 4px var(--cor-principal);
+        }
     }
 }
 
@@ -109,11 +109,10 @@
     & h2 {
         padding: 0 0 5px 0;
     }
+    
+    &:hover {
+        background-color: #287eb8;
+        box-shadow: 6px 6px 4px var(--cor-principal);
+        border-radius: 10px;
+    }
 }
-
-.coluna_direita:hover{
-    background-color: #287eb8;
-    box-shadow: 6px 6px 4px var(--cor-principal);
-    border-radius: 10px;
-}
-
